@@ -1,2 +1,20 @@
-build/
+# Игнорировать ВСЕ папки build в любых подпапках
+**/build/
+
+# Игнорировать папку настроек VS Code
 .vscode/
+
+# Дополнительно (рекомендуется для CMake / Pico SDK)
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Логи
+*.log
